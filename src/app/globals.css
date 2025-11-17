@@ -1,26 +1,40 @@
-@import "tailwindcss";
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+html,
+body {
+  scroll-behavior: smooth !important;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@media (prefers-reduced-motion) {
+  html,
+  body {
+    scroll-behavior: normal !important;
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  text-rendering: geometricPrecision;
+  @apply text-base font-body text-black;
 }
+
+#__next > footer {
+  top: 100vh;
+  position: sticky;
+}
+
+/* Call to Action */
+.primary-link {
+  /* @apply px-[38px] py-[20px] text-base sm:text-lg font-semibold bg-black text-white rounded-full no-underline; */
+}
+
+.secondary-link {
+  /* @apply transition-all text-lg font-semibold underline underline-offset-8 decoration-black hover:no-underline decoration-4; */
+}
+
+.inline-link {
+  @apply hover:underline underline-offset-4 decoration-black decoration-solid;
+}
+/* End Call to Action */
+
