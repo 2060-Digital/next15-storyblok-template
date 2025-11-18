@@ -11,6 +11,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@next/third-parties": "^16.0.3",
     "@storyblok/js": "^4.0.1",
     "@storyblok/react": "^5.4.11",
     "classnames": "^2.5.1",
