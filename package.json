@@ -13,6 +13,7 @@
   "dependencies": {
     "@storyblok/js": "^4.0.1",
     "@storyblok/react": "^5.4.11",
+    "classnames": "^2.5.1",
     "next": "^15.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -22,8 +23,8 @@
   "devDependencies": {
     "@2060digital/prettier-config": "^1.0.2",
     "@plaiceholder/next": "^3.0.0",
-    "@tailwindcss/typography": "^0.5.8",
     "@svgr/webpack": "^8.1.0",
+    "@tailwindcss/typography": "^0.5.8",
     "autoprefixer": "^10.4.20",
     "eslint": "^8.57.0",
     "eslint-config-next": "^15.0.0",

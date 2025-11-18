@@ -10,7 +10,7 @@ export default async function ArticlesWidget({ blok }) {
   const version   = isDraft ? "draft" : "published";
   const fetchInit = isDraft ? { cache: "no-store" } : undefined;
 
-  const limit = blok?.limit ?? 3;
+  const limit = blok?.limit ?? 100;
 
   const { stories } = await getStories(
     {
