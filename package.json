@@ -15,6 +15,7 @@
     "@storyblok/js": "^4.0.1",
     "@storyblok/react": "^5.4.11",
     "classnames": "^2.5.1",
+    "fuse.js": "^7.1.0",
     "next": "^15.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",

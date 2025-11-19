@@ -1,11 +1,11 @@
 export default function Status({ error, isDirty, isInvalid }) {
   return (
-    <div className="pt-2 pb-3 text-right mb-4 h-8 text-secondary">
+    <div className="pt-2 pb-3 text-right mb-4 h-4">
       {isDirty ? (
         isInvalid ? (
           <Error>{error.message}</Error>
         ) : (
-          <span className={isInvalid ? "text-invalid pt-2" : "text-tertiary"}>Great!</span>
+          <span className={isInvalid ? "text-invalid pt-2" : "text-valid"}>Great!</span>
         )
       ) : isInvalid ? (
         <Error>{error.message}</Error>
@@ -15,5 +15,5 @@ export default function Status({ error, isDirty, isInvalid }) {
 }
 
 function Error({ children }) {
-  return <div className="text-error">{children}</div>
+  return <span className="text-error">{children}</span>
 }

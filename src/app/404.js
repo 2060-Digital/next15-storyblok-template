@@ -5,7 +5,7 @@ import { useRouter } from "next/router"
 import Meta from "components/Meta"
 import { getGlobals } from "storyblok/api"
 
-export default function Page({ meta }) {
+export default function Page({ }) {
   const router = useRouter()
   const [results, setResults] = useState()
 
@@ -44,8 +44,7 @@ export default function Page({ meta }) {
   }, [router.asPath])
 
   return (
-    <>
-      <Meta info={meta} />
+    <>1
       <h1>Page Not Found</h1>
       <h2>Sorry, the page you{"'"}re trying to access could not be found. It may have been deleted or moved.</h2>
       <div className="px-10 lg:px-0  py-10 max-w-4xl mx-auto ">
@@ -68,13 +67,3 @@ export default function Page({ meta }) {
   )
 }
 
-export async function getStaticProps({ preview = null }) {
-  const globals = await getGlobals()
-
-  return {
-    props: {
-      preview,
-      globals,
-    },
-  }
-}

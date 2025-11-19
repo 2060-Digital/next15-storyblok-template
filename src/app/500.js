@@ -1,5 +1,3 @@
-import { getGlobals } from "storyblok/api"
-
 export default function Page({ }) {
   return (
     <>
@@ -12,13 +10,3 @@ export default function Page({ }) {
   )
 }
 
-export async function getStaticProps({ preview = null }) {
-  const globals = await getGlobals()
-
-  return {
-    props: {
-      preview,
-      globals,
-    },
-  }
-}
