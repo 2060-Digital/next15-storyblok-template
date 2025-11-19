@@ -1,4 +1,4 @@
-import { StoryblokComponent } from "@storyblok/react/rsc";
+import { StoryblokComponent } from "@storyblok/react";
 import { componentRegistry } from "@/lib/storyblok";
 
 /** Simple dev-friendly fallback to avoid crashes for unknown components */

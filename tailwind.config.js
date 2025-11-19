@@ -17,7 +17,7 @@ const config = {
       base: ["1rem", "1.5rem"],
     },
     colors: {
-      primary: "#efefef",
+      primary: "#444444",
       white: "#ffffff",
       black: "#000000",
       charcoal: "#444444",

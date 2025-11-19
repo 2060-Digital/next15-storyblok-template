@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="container text-sm text-center">
         &copy; {new Date().getFullYear()} Site Name | All rights reserved. <br className="lg:hidden" />
         <span className="hidden lg:inline">|</span>{" "}
-        <Link href="https://art19.com/privacy" target="_blank" className="text-secondary hover:underline">
+        <Link href="#" target="_blank" className="text-secondary hover:underline">
           Privacy Policy
         </Link>
       </div>

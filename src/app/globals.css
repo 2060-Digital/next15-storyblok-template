@@ -5,6 +5,8 @@
 html,
 body {
   scroll-behavior: smooth !important;
+  height: 100%; 
+  margin: 0;
 }
 
 @media (prefers-reduced-motion) {
@@ -17,10 +19,12 @@ body {
 body {
   text-rendering: geometricPrecision;
   @apply text-base font-body text-black;
+  display: grid;
+  grid-template-rows: 1fr auto;
 }
 
-#__next > footer {
-  top: 100vh;
+footer {
+
   position: sticky;
 }
 
