@@ -1,13 +1,15 @@
+"use client"
+
 import { useState, useEffect } from "react"
 import { useForm, FormProvider } from "react-hook-form"
 import { yupResolver } from "@hookform/resolvers/yup"
 
-import Input from "components/Form/Input"
-import Textarea from "components/Form/Textarea"
-import Radio from "components/Form/Radio"
-import Checkbox from "components/Form/Checkbox"
-import { track } from "utilities/tracking"
-import encode from "utilities/encode"
+import Input from "@/components/Form/Input"
+import Textarea from "@/components/Form/Textarea"
+import Radio from "@/components/Form/Radio"
+import Checkbox from "@/components/Form/Checkbox"
+import { track } from "@/utilities/track"
+import encode from "@/utilities/encode"
 
 function Form({
   name,

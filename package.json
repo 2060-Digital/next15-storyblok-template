@@ -11,6 +11,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@hookform/resolvers": "^5.2.2",
     "@next/third-parties": "^16.0.3",
     "@storyblok/js": "^4.0.1",
     "@storyblok/react": "^5.4.11",
@@ -19,8 +20,11 @@
     "next": "^15.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-hook-form": "^7.66.1",
     "sharp": "^0.33.4",
-    "storyblok-rich-text-react-renderer": "^2.9.1"
+    "storyblok-rich-text-react-renderer": "^2.9.1",
+    "yup": "^1.7.1",
+    "yup-phone-lite": "^2.0.1"
   },
   "devDependencies": {
     "@2060digital/prettier-config": "^1.0.2",

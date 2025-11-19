@@ -1,6 +1,8 @@
+
 import "./globals.css";
 import { initStoryblok } from "@/lib/storyblok";
 import Header from "@/components/Header"
+import FormConfig from "@/components/FormConfig";
 import Footer from "@/components/Footer"
 
 export const metadata = {
@@ -43,11 +45,16 @@ export default function RootLayout({ children }) {
   // Initialize Storyblok (register components + apiPlugin) exactly once
   initStoryblok();
 
+
   return (
     <html lang="en">
-      <Header />
-      <body>{children}</body>
-      <Footer />
+       
+      <body>
+         <Header />
+        {children} 
+        <Footer />
+        </body>
+      
     </html>
   );
 }

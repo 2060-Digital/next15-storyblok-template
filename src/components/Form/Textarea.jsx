@@ -1,6 +1,6 @@
 import cn from "classnames"
 import { useFormContext } from "react-hook-form"
-import Error from "components/Form/Status"
+import Error from "@/components/Form/Status"
 
 export default function Textarea({ name, label, className, ...delegated }) {
   const {

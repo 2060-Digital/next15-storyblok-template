@@ -1,6 +1,6 @@
 import cn from "classnames"
 import { useFormContext } from "react-hook-form"
-import Status from "components/Form/Status"
+import Status from "@/components/Form/Status"
 
 export default function Input({ name, label, ...delegated }) {
   const {
