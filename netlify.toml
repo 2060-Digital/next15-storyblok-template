@@ -9,6 +9,3 @@
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
-# Retain your local image placeholder cache plugin if you still use it
-[[plugins]]
-  package = "/plugins/img-placeholder-cache"

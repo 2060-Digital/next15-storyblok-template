@@ -4,7 +4,7 @@ import * as yup from "yup"
 import "yup-phone-lite"
 import { Form, Input, Textarea, Radio, Checkbox } from "@/components/Form"
 
-export default function FormConfig() {
+export default function FormSection() {
 
     const required = "This is required."
     const nameValidation = yup.string().required(required)
@@ -15,7 +15,7 @@ export default function FormConfig() {
         First: nameValidation,
         Last: nameValidation,
         Consent: nameValidation,
-        Pets: nameValidation,
+      Pets: nameValidation,
         Notes: nameValidation,
         Email: yup.string().email("Enter a valid email address.").required(required),
         Phone: yup.string().phone("US", "Enter a valid phone number.").required(required),

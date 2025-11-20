@@ -2,7 +2,6 @@
 import "./globals.css";
 import { initStoryblok } from "@/lib/storyblok";
 import Header from "@/components/Header"
-import FormConfig from "@/components/FormConfig";
 import Footer from "@/components/Footer"
 
 export const metadata = {
